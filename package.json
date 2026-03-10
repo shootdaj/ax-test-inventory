@@ -1,0 +1,36 @@
+{
+  "name": "ax-test-inventory",
+  "version": "1.0.0",
+  "description": "Inventory Management Library for Node.js — track items, stock levels, transactions, and generate reports",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "test": "node --test 'test/unit/*.test.js' 'test/integration/*.test.js' 'test/scenarios/*.test.js'",
+    "test:unit": "node --test 'test/unit/*.test.js'",
+    "test:integration": "node --test 'test/integration/*.test.js'",
+    "test:scenarios": "node --test 'test/scenarios/*.test.js'",
+    "lint": "echo 'No linter configured yet'"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "inventory",
+    "stock",
+    "management",
+    "tracking",
+    "warehouse",
+    "sku"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shootdaj/ax-test-inventory.git"
+  }
+}
