@@ -12,18 +12,18 @@
 
 ```bash
 # Unit tests (fast, no dependencies)
-node --test test/unit/
+node --test 'test/unit/*.test.js'
 
 # Integration tests
-node --test test/integration/
+node --test 'test/integration/*.test.js'
 
 # Scenario tests
-node --test test/scenarios/
+node --test 'test/scenarios/*.test.js'
 
 # Full pyramid (run all in order)
-node --test test/unit/ && \
-  node --test test/integration/ && \
-  node --test test/scenarios/
+node --test 'test/unit/*.test.js' && \
+  node --test 'test/integration/*.test.js' && \
+  node --test 'test/scenarios/*.test.js'
 ```
 
 ## Requirement -> Test Mapping
