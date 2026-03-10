@@ -61,12 +61,33 @@
       "completed_at": "2026-03-10T08:05:00Z"
     }
   ],
-  "milestone_history": [],
+  "milestone_history": [
+    {
+      "version": "v1.0.0",
+      "project_name": "ax-test-inventory",
+      "phases_completed": [
+        { "phase": 1, "title": "Core Inventory", "started_at": "2026-03-10T07:45:00Z", "completed_at": "2026-03-10T07:50:00Z" },
+        { "phase": 2, "title": "Transaction Log & Events", "started_at": "2026-03-10T07:50:00Z", "completed_at": "2026-03-10T07:55:00Z" },
+        { "phase": 3, "title": "Search, Reports & Batch", "started_at": "2026-03-10T07:55:00Z", "completed_at": "2026-03-10T08:00:00Z" },
+        { "phase": 4, "title": "Documentation & Package", "started_at": "2026-03-10T08:00:00Z", "completed_at": "2026-03-10T08:05:00Z" }
+      ],
+      "completed_at": "2026-03-10T08:10:00Z",
+      "deployment": {
+        "provider": "npm",
+        "url": "https://github.com/shootdaj/ax-test-inventory/releases/tag/v1.0.0"
+      },
+      "test_results": {
+        "unit": { "passed": 105, "failed": 0 },
+        "integration": { "passed": 12, "failed": 0 },
+        "scenario": { "passed": 5, "failed": 0 }
+      }
+    }
+  ],
   "last_commands": {
     "init": "2026-03-10T07:40:00Z",
     "phase": "2026-03-10T08:05:00Z",
     "run": "2026-03-10T07:45:00Z",
-    "finish": null,
+    "finish": "2026-03-10T08:10:00Z",
     "status": null
   }
 }
