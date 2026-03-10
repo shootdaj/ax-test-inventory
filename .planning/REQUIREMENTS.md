@@ -105,13 +105,55 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| — | — | — |
+| CORE-01 | Phase 1 | Pending |
+| CORE-02 | Phase 1 | Pending |
+| CORE-03 | Phase 1 | Pending |
+| CORE-04 | Phase 1 | Pending |
+| CORE-05 | Phase 1 | Pending |
+| CORE-06 | Phase 1 | Pending |
+| CORE-07 | Phase 1 | Pending |
+| CORE-08 | Phase 1 | Pending |
+| STCK-01 | Phase 1 | Pending |
+| STCK-02 | Phase 1 | Pending |
+| TLOG-01 | Phase 2 | Pending |
+| TLOG-02 | Phase 2 | Pending |
+| TLOG-03 | Phase 2 | Pending |
+| TLOG-04 | Phase 2 | Pending |
+| TLOG-05 | Phase 2 | Pending |
+| TLOG-06 | Phase 2 | Pending |
+| TLOG-07 | Phase 2 | Pending |
+| EVNT-01 | Phase 2 | Pending |
+| EVNT-02 | Phase 2 | Pending |
+| EVNT-03 | Phase 2 | Pending |
+| EVNT-04 | Phase 2 | Pending |
+| STCK-03 | Phase 2 | Pending |
+| STCK-04 | Phase 2 | Pending |
+| SRCH-01 | Phase 3 | Pending |
+| SRCH-02 | Phase 3 | Pending |
+| SRCH-03 | Phase 3 | Pending |
+| SRCH-04 | Phase 3 | Pending |
+| SRCH-05 | Phase 3 | Pending |
+| BTCH-01 | Phase 3 | Pending |
+| BTCH-02 | Phase 3 | Pending |
+| BTCH-03 | Phase 3 | Pending |
+| REPT-01 | Phase 3 | Pending |
+| REPT-02 | Phase 3 | Pending |
+| REPT-03 | Phase 3 | Pending |
+| REPT-04 | Phase 3 | Pending |
+| REPT-05 | Phase 3 | Pending |
+| IMEX-01 | Phase 3 | Pending |
+| IMEX-02 | Phase 3 | Pending |
+| IMEX-03 | Phase 3 | Pending |
+| QUAL-01 | Phase 4 | Pending |
+| QUAL-02 | Phase 4 | Pending |
+| QUAL-03 | Phase 4 | Pending |
+| QUAL-04 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 32 total
-- Mapped to phases: 0
-- Unmapped: 32
+- Mapped to phases: 32
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-10*
-*Last updated: 2026-03-10 after initial definition*
+*Last updated: 2026-03-10 after roadmap creation*
