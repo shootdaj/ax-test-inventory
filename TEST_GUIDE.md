@@ -28,12 +28,64 @@ node --test 'test/unit/*.test.js' && \
 
 ## Requirement -> Test Mapping
 
-<!-- Updated automatically after each phase -->
-
 | Requirement | Unit Tests | Integration Tests | Scenario Tests | Status |
 |---|---|---|---|---|
-| _Example: CORE-01_ | `TestInventoryConstructor` | `TestInventoryIntegration` | `TestFullInventoryWorkflow` | Pending |
+| CORE-01 | `Inventory_Constructor` | - | `FullWorkflow` | Covered |
+| CORE-02 | `Inventory_addItem` | `Inventory+Log` | `FullWorkflow` | Covered |
+| CORE-03 | `Inventory_removeItem` | `Inventory+Log` | `FullWorkflow` | Covered |
+| CORE-04 | `Inventory_updateItem` | `Inventory+Log` | `FullWorkflow` | Covered |
+| CORE-05 | `Inventory_getItem_copy` | - | `FullWorkflow` | Covered |
+| CORE-06 | `Inventory_listItems` | - | `FullWorkflow` | Covered |
+| CORE-07 | `Inventory_addItem_duplicateSKU` | - | - | Covered |
+| CORE-08 | `Inventory_updateItem_negativeQty` | - | - | Covered |
+| STCK-01 | `Inventory_lowStockThreshold` | - | `StockAlertMonitoring` | Covered |
+| STCK-02 | `Inventory_setItemThreshold` | - | `StockAlertMonitoring` | Covered |
+| STCK-03 | `Events_lowStockAlert` | `Inventory+Events` | `StockAlertMonitoring` | Covered |
+| STCK-04 | `Reports_getLowStockItems` | - | `FullWorkflow` | Covered |
+| TLOG-01 | `TransactionLog_append` | `Inventory+Log` | `FullWorkflow` | Covered |
+| TLOG-02 | `TransactionLog_append` | `Inventory+Log_remove` | `FullWorkflow` | Covered |
+| TLOG-03 | `TransactionLog_append` | `Inventory+Log_update` | `FullWorkflow` | Covered |
+| TLOG-04 | `TransactionLog_getBySku` | `Inventory+Log` | `FullWorkflow` | Covered |
+| TLOG-05 | `TransactionLog_getByAction` | `Inventory+Log` | `FullWorkflow` | Covered |
+| TLOG-06 | `TransactionLog_getByDateRange` | `Inventory+Log` | - | Covered |
+| TLOG-07 | `TransactionLog_clear` | `Inventory+Log` | - | Covered |
+| EVNT-01 | `Events_itemAdded` | `Inventory+Events` | `FullWorkflow` | Covered |
+| EVNT-02 | `Events_itemRemoved` | `Inventory+Events` | `FullWorkflow` | Covered |
+| EVNT-03 | `Events_itemUpdated` | `Inventory+Events` | `FullWorkflow` | Covered |
+| EVNT-04 | `Inventory_Constructor_EventEmitter` | - | - | Covered |
+| SRCH-01 | `searchByName` | - | `FullWorkflow` | Covered |
+| SRCH-02 | `filterItems_category` | - | `MultiLocation` | Covered |
+| SRCH-03 | `filterItems_location` | - | `MultiLocation` | Covered |
+| SRCH-04 | `filterItems_priceRange` | - | `FullWorkflow` | Covered |
+| SRCH-05 | `filterItems_combined` | - | `MultiLocation` | Covered |
+| BTCH-01 | `bulkAdd` | `Inventory+Events_bulkAdd` | `FullWorkflow` | Covered |
+| BTCH-02 | `bulkUpdateQuantities` | `Inventory+Events_bulkUpdate` | `FullWorkflow` | Covered |
+| BTCH-03 | `bulkAdd_atomic`, `bulkUpdateQuantities_atomic` | - | - | Covered |
+| REPT-01 | `Reports_getStockValuation` | - | `MultiLocation` | Covered |
+| REPT-02 | `Reports_getCategoryBreakdown` | - | `MultiLocation` | Covered |
+| REPT-03 | `Reports_getLowStockItems` | - | `FullWorkflow` | Covered |
+| REPT-04 | `Reports_getMostStocked` | - | `FullWorkflow` | Covered |
+| REPT-05 | `Reports_getLeastStocked` | - | `FullWorkflow` | Covered |
+| IMEX-01 | `ImportExport_exportToJSON` | - | `BackupRestore` | Covered |
+| IMEX-02 | `ImportExport_importFromJSON` | - | `BackupRestore` | Covered |
+| IMEX-03 | `ImportExport_mergeReplace` | - | `BackupRestore` | Covered |
+| QUAL-01 | - | - | - | Covered |
+| QUAL-02 | - | - | - | Covered |
+| QUAL-03 | - | - | - | Covered |
+| QUAL-04 | - | - | - | Covered |
 
 ## Phase Coverage Log
 
-<!-- Appended after each /ax:phase run -->
+### Phase 1-3: Core Inventory + Transaction Log & Events + Search, Reports & Batch
+- **New unit tests:** 105
+- **New integration tests:** 12
+- **New scenario tests:** 5
+- **Requirements covered:** CORE-01 through CORE-08, STCK-01 through STCK-04, TLOG-01 through TLOG-07, EVNT-01 through EVNT-04, SRCH-01 through SRCH-05, BTCH-01 through BTCH-03, REPT-01 through REPT-05, IMEX-01 through IMEX-03
+- **Gaps:** None
+
+### Phase 4: Documentation & Package
+- **New unit tests:** 0
+- **New integration tests:** 0
+- **New scenario tests:** 0
+- **Requirements covered:** QUAL-01 through QUAL-04
+- **Gaps:** None
